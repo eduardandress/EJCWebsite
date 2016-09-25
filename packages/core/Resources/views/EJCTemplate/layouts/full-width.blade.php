@@ -6,8 +6,7 @@
 <body>
       @include('core::EJCTemplate.includes.header')
 
-      @include('core::EJCTemplate.includes.breadcrumb')
-
+     
       <div class="row">
            @yield('content')
       </div>
