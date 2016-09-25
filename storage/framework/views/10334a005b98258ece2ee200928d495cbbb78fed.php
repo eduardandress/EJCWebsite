@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title><?php echo e(trans('messages.title')); ?></title>
+    <link rel="icon" type="image/png" href="<?php echo e(asset('installer/img/favicon/favicon-16x16.png')); ?>" sizes="16x16"/>
+    <link rel="icon" type="image/png" href="<?php echo e(asset('installer/img/favicon/favicon-32x32.png')); ?>" sizes="32x32"/>
+    <link rel="icon" type="image/png" href="<?php echo e(asset('installer/img/favicon/favicon-96x96.png')); ?>" sizes="96x96"/>
+    <link href="<?php echo e(asset('installer/css/style.min.css')); ?>" rel="stylesheet"/>
+    <link href="<?php echo e(asset('assets/css/materialize.min.css')); ?>" rel="stylesheet"/>
+    <link href="<?php echo e(URL::asset('https://fonts.googleapis.com/icon?family=Material+Icons')); ?>" rel="stylesheet">
+
+    <link href="<?php echo e(URL::asset('assets/font-awesome-4.6.3/css/font-awesome.min.css')); ?>" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+    <link href="<?php echo e(URL::asset('assets/dropify/css/dropify.min.css')); ?>" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link rel="stylesheet" href="<?php echo e(URL::asset('assets/jqueryBarRating/themes/css-stars.css')); ?>">
+    
+    <script src="<?php echo e(URL::asset('assets/js/jquery-3.1.0.min.js')); ?>"></script>
+
+    <script src="<?php echo e(URL::asset('assets/js/materialize.js')); ?>"></script>
+    <script src="<?php echo e(URL::asset('assets/dropify/js/dropify.min.js')); ?>"></script>
+
+    <script src="<?php echo e(URL::asset('installer/js/babel.min.js')); ?>"></script>
+    <script>
+        var Resourses = (function(){
+            var addLogoDefaultImg = "<?php echo e(URL::asset('installer/img/addLogo.png')); ?>";
+            var imgDefaultBack = "<?php echo e(URL::asset('installer/img/imgDefaultBack.png')); ?>";
+            var setLoadingScreen = function () {
+               $('.box').append('<div class="overlay"><i class="fa fa-refresh fa-spin white-text"></i> <p class="white-text"><?php echo e(trans('messages.loading')); ?></p></div>');
+            };
+            var hideLoadingScreen = function () {
+               $('.box').find('.overlay').remove();
+            } 
+            return {
+                addLogoDefaultImg: addLogoDefaultImg,
+                imgDefaultBack: imgDefaultBack,
+                setLoadingScreen: setLoadingScreen,
+                hideLoadingScreen: hideLoadingScreen
+            }
+
+        }())
+    </script>
+    <script type="text/babel" src="<?php echo e(URL::asset('installer/js/installer.js')); ?>"></script>
+    <script src="<?php echo e(URL::asset('assets/jqueryBarRating/jquery.barrating.min.js')); ?>"></script>
+
+  </head>
+  <body>
+
+     <div class="master">
+      <div class="container">
+        <div class="box">
+          <div class="header">
+              <h1 class="header__title"><?php echo $__env->yieldContent('title'); ?></h1>
+          </div>
+          <div id="installerFormWizard" class="formWizard">
+            
+              <ul class="step">
+                <li class="step__divider"></li>
+                <li class="step__item "><i class="step__icon done_all material-icons">done_all</i></li>
+                <li class="step__divider"></li>
+                 <li class="step__item "><i class="step__icon  client material-icons">contacts</i></li>
+                <li class="step__divider"></li>
+                <li class="step__item "><i class="step__icon  products material-icons">shopping_basket</i></li>
+                <li class="step__divider"></li>
+                <li class="step__item "><i class="step__icon business material-icons">business</i></li>
+                <li class="step__divider"></li>
+                <li class="step__item "><i class="step__icon permissions"></i></li>
+                <li class="step__divider"></li>
+                <li class="step__item "><i class="step__icon requirements"></i></li>
+                <li class="step__divider"></li>
+                <li class="step__item "><i class="step__icon update"></i></li>
+                <li class="step__divider"></li>
+                <li class="step__item "><i class="step__icon welcome"></i></li>
+                <li class="step__divider"></li>
+              </ul>
+              <div id="main" class="main stepsContainer">
+                    
+
+              </div>
+
+          </div>
+        </div>
+      </div>  
+    </div>
+    <div id="productModal" class="modal" dismissible="false">
+      <div class="modal-content">
+        <h4><?php echo e(trans('messages.product.addProduct')); ?></h4>
+        <div class="card-panel grey lighten-5">
+            <div class="row">
+                <div class="col s8">
+                    <div class="row">
+                      <div class="col s12">
+                         <div class="input-field">
+
+                            <input  type="text" value="" class="validate name" id="name">
+                            <label for="name" ><?php echo e(trans('messages.product.productName')); ?></label>
+
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col s12">
+                        <div class="input-field">
+                          <textarea id="description"
+                             class="materialize-textarea description" maxlength="500"></textarea>
+                                 <label for="description" ><?php echo e(trans('messages.product.productDescription')); ?></label>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                         <div class="input-field col s6">
+                            <input   type="number" value="" class="validate price" id="price">
+                              <label for="price" ><?php echo e(trans('messages.product.productPrice')); ?></label>
+                        </div>
+                        <div class="input-field col s6">
+                            <input  value="" type="text" class="validate currency" id="currency">
+                                  <label for="currency"><?php echo e(trans('messages.product.productCurrency')); ?></label>
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="col s6">
+                          <label for="newProductRating" ><?php echo e(trans('messages.product.productRating')); ?></label>
+                                <select  name="newProductRating" class="rating">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s4">
+                  <div class="image_view_loader_container">
+                        <img style="background-image: url('<?php echo e(URL::asset('installer/img/imgDefaultBack.png')); ?>')" class="img_view " src="" alt="" />
+                      <div class="file-field input-field">
+                          <div class="btn">
+                            <span><?php echo e(trans('messages.product.loadImage')); ?></span>
+                            <input class="image_view_input_file" type="file">
+                          </div>
+                          <div class="file-path-wrapper">
+                            <input class="file-path validate" type="text">
+                          </div>
+                       </div>
+                  </div>
+
+                </div>
+            </div>
+          </div>
+
+      </div>
+      <div class="modal-footer">
+
+        <a href="#!" class="cancelBtn modal-action modal-close waves-effect waves-green btn-flat"><?php echo e(trans('messages.product.cancel')); ?></a>
+        <a href="#!"  class="saveProductBtn modal-action  waves-effect waves-green btn-flat"><?php echo e(trans('messages.product.save')); ?></a>
+      </div>
+    </div>
+
+  </body>
+
+
+
+
+  <script type="text/babel">
+      let resources = Resourses;
+      let Steps = [
+
+      {
+
+        props: {
+            id: "#step1",
+            title: "<?php echo e(trans('messages.welcome.title')); ?>",
+            iconClass: ".welcome",
+            isInitialStep: true,
+            isFinalStep: false,
+            template: ` <p class="paragraph"><?php echo e(trans('messages.welcome.message')); ?></p>
+              <div class="buttons">
+                  <a class="button nextStep"><?php echo e(trans('messages.next')); ?></a>
+              </div>`
+        },
+        beforeNextStep(container){
+           return  new Promise(function(resolve, reject){
+              resolve();
+           }); 
+        }
+
+      },
+       
+      {
+
+        props: {
+            id: "#step2",
+            title: "<?php echo e(trans('messages.environment.title')); ?>",
+            iconClass: ".update",
+            isInitialStep: true,
+            isFinalStep: false,
+            template: `
+               <?php if(session('message')): ?>
+                  <p class="alert"><?php echo e(session('message')); ?></p>
+                  <?php endif; ?>
+                   <p ><?php echo e(trans('messages.environment.description')); ?></p>
+                  <form method="post" action="<?php echo e(route('EJCInstaller::environmentSave')); ?>">
+                      <textarea class="textarea" id="envConfig" name="envConfig"><?php echo e($envConfig); ?></textarea>
+                      <?php echo csrf_field(); ?>
+
+                      <br>
+                  </form>
+                  <?php if(!isset($environment['errors'])): ?>
+                  <div class="buttons">
+                      <a class="button nextStep" href="#">
+                          <?php echo e(trans('messages.next')); ?>
+
+                      </a>
+                  </div>
+                  <?php endif; ?>
+            `,
+        },
+        beforeNextStep(container){
+            return  new Promise(function(resolve, reject){
+                var newConf = $('#envConfig').val();
+                $.ajax({
+                    url:'install/environment/save',
+                    method:'POST',
+                    beforeSend : function(){
+                     resources.setLoadingScreen();
+                    },
+                    data : {'envConfig': newConf},
+                    success : function(response){
+                        if(response.status && response.status === 'success'){
+                          resources.hideLoadingScreen();
+                          resolve();
+                        } else {
+                          console.log(response.message);
+                          reject();
+                        }
+                    }
+                })
+               
+           }); 
+        }
+
+      },
+      {
+
+        props: {
+            id: "#step3",
+            title: "<?php echo e(trans('messages.requirements.title')); ?>",
+            iconClass: ".requirements",
+            isInitialStep: false,
+            isFinalStep: false,
+            template: `
+               
+                <ul class="list">
+                    <?php foreach($requirements['requirements'] as $extention => $result): ?>
+                    <li class="list__item <?php if($result['result']): ?> success <?php else: ?> error <?php endif; ?>"><?php echo e($extention); ?> <?php if(isset($result['error'])): ?> ( <?php echo e($result['error']); ?> )<?php endif; ?></li>
+                    <?php endforeach; ?>
+                </ul>
+
+                <?php if(!isset($requirements['errors'])): ?>
+                    <div class="buttons">
+                        <a class="button nextStep" href="#">
+                        <?php echo e(trans('messages.next')); ?>
+
+                        </a>
+                    </div>
+                <?php endif; ?>
+            `,
+        },
+        beforeNextStep(container){
+
+           return  new Promise(function(resolve, reject){
+                  
+                $.ajax({
+                    url:'install/database',
+                    method:'GET',
+                    beforeSend : function(){
+                     resources.setLoadingScreen();
+                    },
+                    success : function(response){
+                        if(response.status && response.status === 'success'){
+                          resources.hideLoadingScreen();
+                          resolve();
+                        } else {
+                          console.log(response.message);
+                          reject();
+                        }
+                    }
+                })
+           }); 
+        }
+
+      },
+       {
+
+        props: {
+            id: "#step4",
+            title: "<?php echo e(trans('messages.permissions.title')); ?>",
+            iconClass: ".permissions",
+            isInitialStep: false,
+            isFinalStep: false,
+            template: `
+
+                <ul class="list">
+                    <?php foreach($permissions['permissions'] as $permission): ?>
+                    <li class="list__item list__item--permissions <?php if($permission['isSet']): ?> success <?php else: ?> error <?php endif; ?>">
+                        <?php echo e($permission['folder']); ?><span><?php echo e($permission['permission']); ?></span>
+                        </li>
+                    <?php endforeach; ?>
+                </ul>
+
+                <?php if(!isset($permissions['errors'])): ?>
+                <div class="buttons">
+                    <a class="button nextStep">
+                        <?php echo e(trans('messages.next')); ?>
+
+                    </a>
+                </div>
+                <?php endif; ?>
+            `,
+        },
+        beforeNextStep(container){
+            return  new Promise(function(resolve, reject){
+              resolve();
+           }); 
+        }
+
+      },
+      {
+
+        props: {
+            id: "#step5",
+            title: "<?php echo e(trans('messages.company.title')); ?>",
+            iconClass: ".business",
+            isInitialStep: false,
+            isFinalStep: false,
+            template: `
+                <p class="paragraph"><?php echo e(trans('messages.company.message')); ?></p>
+                      <div class="input-field"> 
+                          <div class="form-group">
+                              <span class="help-block"></span>
+                              <input type="text" class="form-control companyName" id="name" name="name" >
+                              <label class="control-label" for="name"><?php echo e(trans('messages.company.name')); ?></label>
+                          </div>
+                      </div>
+                      <div class="input-field "> 
+                          <div class="form-group">
+                              <div class="input-field">
+                                  <textarea id="description" class="materialize-textarea" name="description" style="max-height: 200px; resize: none" maxlength="450"></textarea>
+                                  <label for="description"><?php echo e(trans('messages.company.description')); ?></label>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="input-field "> 
+                          <div class="form-group">
+                              <div class="input-field">
+                                  <textarea id="missionStatement" class="materialize-textarea" name="missionStatement" style="max-height: 200px; resize: none" ></textarea>
+                                  <label for="missionStatement"><?php echo e(trans('messages.company.missionStatement')); ?></label>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="input-field "> 
+                          <div class="form-group">
+                              <div class="input-field">
+                                  <textarea id="visionStatement" class="materialize-textarea" name="visionStatement" style="max-height: 200px; resize: none"></textarea>
+                                  <label for="visionStatement"><?php echo e(trans('messages.company.visionStatement')); ?></label>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="input-field "> 
+
+                          <label for="input-file-now">Logo</label>
+                          <div class="form-group">
+                              <input type="file" name="logo" id="input-file-now" data-allowed-file-extensions="jpg png" accept=".jpg,.png" class="dropify form-control" />
+                          </div>
+                      </div>
+                              <br />
+                      <div class="input-field "> 
+                          <div class="form-group">
+                              <div class="input-field">
+                                  <textarea id="mainAddress" class="materialize-textarea" name="mainAddress" style="max-height: 200px; resize: none"></textarea>
+                                  <label for="mainAddress"><?php echo e(trans('messages.company.mainAddress')); ?></label>
+                              </div>
+                          </div>
+                      </div>
+
+                      <div class="row">
+                          <div class="input-field col m6 s12"> 
+                              <!-- <div class="form-group"> -->
+                                  <i class="fa fa-phone prefix"></i>
+                                  <input type="text" class="form-control" name="mainLandPhone" id="mainLandPhone" >
+                                  <label class="control-label" for="mainLandPhone"><?php echo e(trans('messages.company.mainLandPhone')); ?></label>
+                              <!-- </div> -->
+                          </div>
+                          <div class="input-field col m6 s12"> 
+                              <div class="form-group">
+                                  <i class="fa fa-envelope prefix"></i>
+                                  <span class="help-block"></span>
+                                  <input type="text" class="form-control" name="mainEmail" id="mainEmail" >
+                                  <label class="control-label" for="mainEmail"><?php echo e(trans('messages.company.mainEmail')); ?></label>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="row">
+                          <div class="input-field col m6 s12"> 
+                              <div class="form-group">
+                                  <i class="fa fa-facebook prefix"></i>
+                                  <span class="help-block"></span>
+                                  <input type="text" class="form-control" name="mainFacebookProfile" id="mainFacebookProfile" >
+                                  <label class="control-label" for="mainFacebookProfile"><?php echo e(trans('messages.company.mainFacebookProfile')); ?></label>
+                              </div>
+                          </div>
+                          <div class="input-field col m6 s12"> 
+                              <div class="form-group">
+                                  <i class="fa fa-twitter prefix"></i>
+                                  <span class="help-block"></span>
+                                  <input type="text" class="form-control" name="mainTwitterProfile" id="mainTwitterProfile" >
+                                  <label class="control-label" for="mainTwitterProfile"><?php echo e(trans('messages.company.mainTwitterProfile')); ?></label>
+                              </div>
+                          </div>
+                      </div>
+
+                      <div class="row">
+                          <div class="input-field col m6 s12"> 
+                              <div class="form-group">
+                                  <i class="fa fa-instagram prefix"></i>
+                                  <span class="help-block"></span>
+                                  <input type="text" class="form-control" name="mainInstagramProfile" id="mainInstagramProfile" >
+                                  <label class="control-label" for="mainInstagramProfile"><?php echo e(trans('messages.company.mainInstagramProfile')); ?></label>
+                              </div>
+                          </div>
+                          <div class="input-field col m6 s12"> 
+                              <div class="form-group">
+                                  <i class="fa fa-google-plus-official prefix"></i>
+                                  <span class="help-block"></span>
+                                  <input type="text" class="form-control" name="mainGooglePlusProfile" id="mainGooglePlusProfile" >
+                                  <label class="control-label" for="mainGooglePlusProfile"><?php echo e(trans('messages.company.mainGooglePlusProfile')); ?></label>
+                              </div>
+                          </div>
+                      </div>
+                      
+                      <div class="buttons">
+                          <button class="button nextStep">
+                          <?php echo e(trans('messages.next')); ?></button>
+                      </div>
+            `,
+        },
+        beforeNextStep(container){
+           return  new Promise(function(resolve, reject){
+                  var formData = new FormData($("form")[0]);
+                  var name = $(".companyName").val();
+
+                  if(name.trim() === ""){
+                      reject();
+                  }
+
+                  $.ajax({
+                        url:'install/company/save',
+                        method:'POST',
+                        data: formData,
+                        processData : false,
+                        contentType : false,  
+                        beforeSend : function(){
+                         resources.setLoadingScreen();
+                        },
+                        success : function(response){
+                            if(response.status && response.status === 'success'){
+                              resources.hideLoadingScreen();
+                              resolve();
+                            } else {
+                              console.log(response.message);
+                              reject();
+                            }
+                        }
+                  }) 
+           }); 
+        },
+        afterRender(container) {
+          $('.dropify').dropify({
+              messages: {
+                  'default': '<p class="center-align"><?php echo e(trans("messages.company.dropLogoMessage")); ?></p>',
+                  'replace': '<?php echo e(trans("messages.company.replaceLogoMessage")); ?>',
+                  'remove':  '<?php echo e(trans("messages.company.removeLogoMessage")); ?>',
+                  'error':   '<?php echo e(trans("messages.company.errorUploadLogo")); ?>'
+              }
+          });
+         
+
+
+        }
+      },
+      {
+
+        props: {
+            id: "#step6",
+            title: "<?php echo e(trans('messages.product.title')); ?>",
+            iconClass: ".products",
+            isInitialStep: false,
+            isFinalStep: false,
+            options: {},
+            template: `
+           
+              <div id="productsContainer">
+              </div>
+              <div class="buttons">
+                  <button class="button nextStep">
+                  <?php echo e(trans('messages.next')); ?></button>
+              </div>
+            `,
+        },
+        beforeNextStep(container){
+
+          var products = this.props.options.padmin.getProducts();
+  
+          return  new Promise(function(resolve, reject){
+              if(products.length === 0){
+                  reject();
+                  return; 
+              }else{
+                products =  JSON.stringify(products);
+              }
+
+              $.ajax({
+                        url:'install/products/save',
+                        method:'POST',
+                        data: products,
+                        processData: false,
+                        contentType : false,  
+                        beforeSend : function(){
+                         resources.setLoadingScreen();
+                        },
+                        success : function(response){
+                            if(response.status && response.status === 'success'){
+                            resources.hideLoadingScreen();
+                              resolve();
+                            } else {
+                              console.log(response.message);
+                              reject();
+                            }
+                        }
+               }) 
+          }); 
+            
+        },
+        afterRender(container) {
+           this.props.options["padmin"] = new ProductsAdmin($("#productsContainer"), [], $('#productModal'), $('#inputProducts') )
+            this.props.options.padmin.render();
+            ProductsAdmin.initEvents(this.props.options.padmin);
+        }
+        
+      },
+         {
+
+        props: {
+            id: "#step7",
+            title: "<?php echo e(trans('messages.client.title')); ?>",
+            iconClass: ".client",
+            isInitialStep: false,
+            isFinalStep: false,
+            options: {},
+            template: `
+           
+              <div id="clientsContainer">
+              </div>
+              <div class="buttons">
+                  <button class="button nextStep">
+                  <?php echo e(trans('messages.next')); ?></button>
+              </div>
+            `,
+        },
+        beforeNextStep(container){
+
+          var clients = this.props.options.cAdmin.getClients(true);
+         
+          return  new Promise(function(resolve, reject){
+             
+              $.ajax({
+                        url:'install/clients/save',
+                        method:'POST',
+                        data: clients,
+                        processData: false,
+                        contentType : false,
+                        beforeSend: function(){
+                          resources.setLoadingScreen();
+                        },
+                        success : function(response){
+                            if(response.status && response.status === 'success'){
+                              resources.hideLoadingScreen();
+                              resolve();
+                            } else {
+                              console.log(response.message);
+                              reject();
+                            }
+                        }
+               }) 
+          }); 
+            
+        },
+        afterRender(container) {
+            let trans = {
+              clientPlaceHolder: "<?php echo e(trans('messages.client.clientName')); ?>",
+              clientImgTitle:"<?php echo e(trans('messages.client.clientImgTitle')); ?>"
+            }
+            this.props.options["cAdmin"] =   new ClientsAdmin( [], $("#clientsContainer"), trans);
+            this.props.options.cAdmin.render();
+        
+            ClientsAdmin.initEvents(this.props.options.cAdmin);
+        }
+        
+      },
+      {
+
+        props: {
+            id: "#step8",
+            title: "<?php echo e(trans('messages.final.title')); ?>",
+            iconClass: ".done_all",
+            isInitialStep: false,
+            isFinalStep: true,
+            template: `
+           
+              <p class="paragraph"><?php echo e(session('message')['message']); ?></p>
+              <div class="buttons">
+                  <a href="<?php echo e(route('CoreRoutes::landing_page')); ?>" class="button"><?php echo e(trans('messages.final.initApp')); ?></a>
+              </div>
+            `,
+        },
+        beforeNextStep(container){
+            return  new Promise(function(resolve, reject){
+              resolve();
+           });    
+        },
+        afterRender(container) {
+
+          return  new Promise(function(resolve, reject){
+             
+              $.ajax({
+                        url:'install/final',
+                        method:'GET',
+                        processData: false,
+                        contentType : false,
+                        beforeSend: function(){
+                          resources.setLoadingScreen();
+                        },
+                        success : function(response){
+                            if(response.status && response.status === 'success'){
+                              resources.hideLoadingScreen();
+                              resolve();
+                            } else {
+                              console.log(response.message);
+                              reject();
+                            }
+                        }
+               }) 
+       
+          }); 
+
+        }
+        
+      },
+     
+      
+
+      ];
+
+      
+      let installerFormWizard =  $("#installerFormWizard");
+      var installerForm = new FormWizard(Steps, "register.php", installerFormWizard )
+      installerForm.render();
+
+
+  </script>
+  
+  <style>
+
+     .image_view_loader_container .img_view{
+        width:  100%;
+        height: 230px;
+        min-width: 100%;
+     }
+
+        
+     
+
+  </style>
+
+  <script type="text/babel">
+ 
+
+  </script>
+</html>

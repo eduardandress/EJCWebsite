@@ -1,0 +1,105 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * 
+ */
+
+/* Logo  */
+#logo-container{
+	margin-left: 5px;
+    display: flex;
+    align-items: center;
+}
+#logo-container > img{
+	max-height: 64px;
+	width:  100%;
+	max-width:  50%;
+	margin-right: 10px;
+}
+.compName{
+	text-align: left;
+	color: black;
+	font-size: 20px;
+	text-transform: uppercase;
+}
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+	font-size: inherit;
+}
+header .carousel-slider {
+	height:600px !important;
+}
+
+.carousel-slider h1,.carousel-slider h2 {
+	background-color: rgba(14, 20, 20, 0.35);
+	font-weight: 200;
+}
+.flex-row{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+}
+.flex-col{
+	flex-grow: 1;
+	flex-shrink: 1;
+}
+/* Carousel Demo Backgrounds */
+.demoBgn{
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.demoback1{
+	background-image: url(../images/main-carousel/demoImg1.png);
+}
+.demoback2{
+	background-image: url(../images/main-carousel/demoImg2.jpg);
+}
+.demoback3{
+	background-image: url(../images/main-carousel/demoImg3.jpg);
+	background-position: initial;
+}
+.demoback4{
+	background-image: url(../images/main-carousel/demoImg4.jpg);
+}
+/* Clients Carousel */
+#owl-clients .item{
+	padding: 10px;
+}
+#owl-clients .item .card  img{
+	height: 100%;
+	margin-top: 2px;
+}
+h2{
+	font-size: 36px;
+}
+
+h5 {
+	font-weight: 300;
+}
+
+/* Best Products */
+.product-item {
+	flex-basis: 300px;
+	max-width: 300px;
+	margin: 5px;
+}
+.product-item  .card  .card-title{
+	font-weight: bold;
+	text-shadow: 1px 1px 1px #FFF;
+}
+.section h2 {
+	font-weight: 200;
+}
+.material-scrolltop:hover {
+    background-color: inherit;
+    z-index: 9999;
+}
+
+.uninstall .header {
+	text-shadow: 0.8px 0px 0.5px #000 !important;
+}
