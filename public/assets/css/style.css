@@ -17,6 +17,18 @@
 
 /*=====  End of Header classes  ======*/
 
+.text-center{
+  text-align: center;
+}
+.centered{
+  position: relative;
+  left:  50%;
+  transform: translateX(-50%);
+}
+.halign-wrapper{
+  display: flex;
+  justify-content: center;
+}
 #teamSection{
 
 }
@@ -200,15 +212,19 @@ a[ class="goTo" ]:target {
 .demoBgn h1 {
   background-color: rgba(14, 20, 20, 0.35);
 }
-.demoBgn p {
+.demoBgn p.header {
   background-color: rgba(0, 27, 44, 0.79);
   font-weight: 200;
   font-size: 1.64rem;
   line-height: 110%;
   margin: 0.82rem 0 0.656rem 0;
+  padding: 10px;
 }
 
 #aboutEJCSection .principle h4::first-letter { 
     font-size: 200%;
     color: #0288d1;
+}
+nav .brand-logo{
+  margin-left: 20px !important;
 }

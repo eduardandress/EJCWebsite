@@ -334,6 +334,94 @@
       </div>
 
     </div>
+    <div class="section  blue darken-2 " id="minidemosSection">
+      <h2 class="center-align white-text"> Mini Demos</h2>
+      <div class="row ">
+        <div class="container ">
+
+          <div class="col s12 m8 offset-m2">
+            <h5 class="white-text light text-center">We decided to share some of our demo apps, so you can check some of our work done!</h5>
+
+          </div>
+
+        </div>
+      </div>
+
+      <div class="container">
+          <div class="row">
+            <div class="col m6 s12">
+               
+                <div class="card z-depth-4">
+                  <div class="card-image">
+                    <img src="./assets/images/sharedlanguage.png">
+                    <span class="card-title amber darken-1  white-text">Real-time chat with rooms</span>
+                  </div>
+                  <div class="card-content">
+                   <div class="card-content">
+                    <p>This is a real-time chat aplication build with NodeJS platform  in the backend and ReactJS framework used in the front-end.</p>
+                    <p>This chat could be easily integrated with any other app like live customer support.</p>
+                    <br>
+                    <strong>Technologies</strong>
+                    <ul>
+                      <li>Node JS (Sails & Socket.io framework)</li>
+                      <li>CSS3</li>
+                      <li>Javascript</li>
+                      <li>jQuery UI</li>
+                      <li>HTML 5</li>
+                    </ul>
+                    <p>
+                      <strong>Instructions:</strong>
+                      <span>Open two tabs with different Usernames to have a real-time conversation. Enjoy! :)</span>
+                    </p>
+                  </div>
+                </div>
+                <div class="card-action amber darken-2  right-align">
+                  <a target="_blank" class=" grey-text text-darken-3" href="https://sharedlanguage.herokuapp.com">OPEN DEMO</a>
+                </div>
+                </div>
+            </div>
+            <div class="col m6 s12">
+             <div class="card z-depth-4">
+              <div class="card-image">
+               <img src="./assets/images/notes.png">
+               <span class="card-title amber darken-1  white-text">Google Keep inspired notes </span>
+             </div>
+             <div class="card-content">
+               <div class="card-content">
+                <p>Do you know the famous Google Keep? well, we replicated the idea (Copycats mode on haha) adding some stuff like a new panel view and other little changes.</p>
+
+                <br>
+                <strong>Technologies</strong>
+                <ul>
+                  <li>CSS3</li>
+                  <li>Javascript</li>
+                  <li>HTML 5</li>
+                </ul>
+              </div>
+                  </div>
+                  <div class="card-action amber darken-2 right-align">
+                    <a target="_blank" class=" grey-text text-darken-3" href="https://ejcnotesapp.herokuapp.com/">OPEN DEMO</a>
+                  </div>
+                </div>
+
+              </div>
+            <div class="col m12 s12 center-align">
+                 <div class="card amber darken-4 darken-1">
+                    <div  class="card-content valign-wrapper halign-wrapper white-text">
+                       <i class="medium material-icons">settings</i>
+                      <span class="card-title">More coming soon!</span>
+                     
+                    </div>
+                
+                  </div>
+            </div>
+          </div>
+      </div>
+
+</div>
+</div>
+</div>
+
 </div>
 
 

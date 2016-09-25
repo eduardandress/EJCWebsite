@@ -29,18 +29,17 @@
               <div class="col s6">
                       <div class="row">
                         <div class="col s12 m12">
-                          <div class="card indigo darken-1">
+                          <div class="card indigo darken-2">
                             <div class="card-content white-text">
-                              <span class="card-title">Do you need something in particular?</span>
-                              <p>Check out our current gigs!. But if you need something custom or have an idea: Don't stop here. <b>WE CAN MAKE IT HAPPEN! </b>, just request a special order and we will evaluate it and send you an offer for it.</p>
+                              <span class="card-title"> Do you need something in particular?</span>
+                              <p><span>Check out our current gigs!. But if you need something custom or have an idea: Don't stop here. <b>WE CAN MAKE IT HAPPEN! </b>, just request a special order and we will evaluate it and send you an offer for it.</span></p>
                             </div>
-                            <div class="card-action"> 
-                              <a href="http://support.fiverr.com/hc/en-us/articles/204431183-Requesting-a-Custom-Order" target="_blank">Request an special order</a>
+                            <div class="card-action right-align"> 
+                              <a href="http://support.fiverr.com/hc/en-us/articles/204431183-Requesting-a-Custom-Order" target="_blank">Request a special order</a>
                             </div>
                           </div>
                         </div>
                       </div>
-            
               </div>
             </div>
         </div>
