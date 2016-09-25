@@ -27,11 +27,8 @@
         "psr-4": {
             "App\\": "app/",
             "Core\\": "packages/core",
-            "Installer\\": "packages/installer"
         },
-        "files": [
-          "packages/installer/functions.php"
-        ]
+       
     },
     "autoload-dev": {
         "classmap": [

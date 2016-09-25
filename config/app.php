@@ -166,7 +166,6 @@ return [
          * Core Package Service Provider
          */
         Core\Providers\CoreServiceProvider::class,
-        Installer\Providers\EJCInstallerServiceProvider::class,
         
 
     ],

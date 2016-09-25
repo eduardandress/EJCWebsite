@@ -1,4 +1,5 @@
 <?php $__env->startSection('content'); ?>
+
   <?php echo $__env->make('core::EJCTemplate.sections.home.aboutEJC', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
   <?php echo $__env->make('core::EJCTemplate.sections.home.aboutUs', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
   <?php echo $__env->make('core::EJCTemplate.sections.home.education', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
@@ -7,6 +8,7 @@
   <?php echo $__env->make('core::EJCTemplate.sections.home.services', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
   <?php echo $__env->make('core::EJCTemplate.sections.home.contact', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
 
+  
 <?php $__env->stopSection(); ?>
 
 <?php $__env->startSection('scripts'); ?>

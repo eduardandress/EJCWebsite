@@ -1,5 +1,4 @@
-
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
   <meta name="keywords" content="software, applications, fiverr, freelance, websites, cheap"/>
@@ -17,10 +16,10 @@
   <link href="<?php echo e(URL::asset('assets/css/style.css')); ?>" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="<?php echo e(URL::asset('assets/mScrollTop/material-scrolltop.css')); ?>" type="text/css" rel="stylesheet" />
 
-  <link href="<?php echo e(URL::asset('assets/font-awesome-4.6.3/css/font-awesome.min.css')); ?>"type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="<?php echo e(URL::asset('assets/font-awesome-4.6.3/css/font-awesome.min.css')); ?>" type="text/css" rel="stylesheet" media="screen,projection"/>
 
   <script type='text/javascript' data-cfasync='false' src='//dsms0mj1bbhn4.cloudfront.net/assets/pub/shareaholic.js' data-shr-siteid='1b051adb65fef1f23e236babcfae075b' async='async'></script>
-  <title>Software Development-Web & Mobile|EJC Software Solutions</title>
+  <title>Special Offers-Developers-Applications|EJC Software Solutions</title>
 
   <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
@@ -39,4 +38,3 @@
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
-

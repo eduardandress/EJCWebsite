@@ -1,105 +1,214 @@
 /* Custom Stylesheet */
-/**
- * Use this file to override Materialize files so you can update
- * the core Materialize files in the future
- *
- * 
- */
 
-/* Logo  */
-#logo-container{
-	margin-left: 5px;
-    display: flex;
-    align-items: center;
-}
-#logo-container > img{
-	max-height: 64px;
-	width:  100%;
-	max-width:  50%;
-	margin-right: 10px;
-}
-.compName{
-	text-align: left;
-	color: black;
-	font-size: 20px;
-	text-transform: uppercase;
-}
 .icon-block {
   padding: 0 15px;
 }
 .icon-block .material-icons {
 	font-size: inherit;
 }
-header .carousel-slider {
-	height:600px !important;
+
+/**
+ *
+ * Header classes
+ *
+ */
+
+
+
+/*=====  End of Header classes  ======*/
+
+#teamSection{
+
+}
+#teamSection .commonAttributes{
+  margin-top: 200px;
+}
+h2 {
+  font-weight: 200;
+}
+h3 {
+  font-weight: 200;
 }
 
-.carousel-slider h1,.carousel-slider h2 {
-	background-color: rgba(14, 20, 20, 0.35);
-	font-weight: 200;
+.chip span {
+  font-size: 12px;
+}
+.chip i {
+  vertical-align: middle;
+}
+
+/*——————————————
+TimeLine CSS
+———————————————*/
+/* Base */
+
+#content {
+  margin-top: 50px;
+  text-align: center;
+}
+
+section.timeline-outer {
+  width: 80%;
+  margin: 0 auto;
+}
+
+h1.header {
+  font-size: 50px;
+  line-height: 70px;
+}
+/* Timeline */
+
+.timeline {
+  border-left: 8px solid #42A5F5;
+  border-bottom-right-radius: 2px;
+  border-top-right-radius: 2px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  color: white;
+  margin: 50px auto;
+  letter-spacing: 0.5px;
+  position: relative;
+  line-height: 1.4em;
+  padding: 20px;
+  list-style: none;
+  text-align: left;
+}
+
+.timeline h1,
+.timeline h2,
+.timeline h3 {
+  font-size: 1.4em;
+}
+
+.timeline .event {
+  border-bottom: 1px solid rgba(160, 160, 160, 0.2);
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.timeline .event:last-of-type {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  border: none;
+}
+
+.timeline .event:before,
+.timeline .event:after {
+  position: absolute;
+  display: block;
+  top: 0;
+}
+
+.timeline .event:before {
+  left: -177.5px;
+  color: #212121;
+  content: attr(data-date);
+  text-align: right;
+  /*  font-weight: 100;*/
+  
+  font-size: 16px;
+  min-width: 120px;
+}
+
+.timeline .event:after {
+  box-shadow: 0 0 0 8px #42A5F5;
+  left: -30px;
+  background: #212121;
+  border-radius: 50%;
+  height: 11px;
+  width: 11px;
+  content: "";
+  top: 5px;
+}
+/**/
+/*——————————————
+Responsive Stuff
+———————————————*/
+
+@media (max-width: 945px) {
+  .timeline .event::before {
+    left: 0.5px;
+    top: 20px;
+    min-width: 0;
+    font-size: 13px;
+  }
+  .timeline h3 {
+    font-size: 16px;
+  }
+  .timeline p {
+    padding-top: 20px;
+  }
+  section.lab h3.card-title {
+    padding: 5px;
+    font-size: 16px
+  }
+}
+
+@media (max-width: 768px) {
+  .timeline .event::before {
+    left: 0.5px;
+    top: 20px;
+    min-width: 0;
+    font-size: 13px;
+  }
+  .timeline .event:nth-child(1)::before,
+  .timeline .event:nth-child(3)::before,
+  .timeline .event:nth-child(5)::before {
+    top: 38px;
+  }
+  .timeline h3 {
+    font-size: 16px;
+  }
+  .timeline p {
+    padding-top: 20px;
+  }
+}
+.section {
+   /*  -webkit-transform: translateZ( 0 ) !important;
+    transform: translateZ( 0 ) !important; */
+    /* -webkit-transition: -webkit-transform 0.6s ease-in-out !important; */
+    transition: transform 0.6s ease-in !important;
+
+    /* -webkit-backface-visibility: hidden !important; */
+}
+a[ class="goTo" ]:target {
+    -webkit-transform: translateY( -100px);
+    transform: translateY( -100px );
 }
 .flex-row{
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
 }
 .flex-col{
-	flex-grow: 1;
-	flex-shrink: 1;
+  flex-grow: 1;
+  flex-shrink: 1;
 }
-/* Carousel Demo Backgrounds */
+.work .material-icons {
+   font-size: 5em;
+}
 .demoBgn{
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height:100vh !important;
 }
 .demoback1{
-	background-image: url(../images/main-carousel/demoImg1.png);
-}
-.demoback2{
-	background-image: url(../images/main-carousel/demoImg2.jpg);
-}
-.demoback3{
-	background-image: url(../images/main-carousel/demoImg3.jpg);
-	background-position: initial;
-}
-.demoback4{
-	background-image: url(../images/main-carousel/demoImg4.jpg);
-}
-/* Clients Carousel */
-#owl-clients .item{
-	padding: 10px;
-}
-#owl-clients .item .card  img{
-	height: 100%;
-	margin-top: 2px;
-}
-h2{
-	font-size: 36px;
+  background-image: url(../images/demoImg3.jpg);
 }
 
-h5 {
-	font-weight: 300;
+.demoBgn h1 {
+  background-color: rgba(14, 20, 20, 0.35);
+}
+.demoBgn p {
+  background-color: rgba(0, 27, 44, 0.79);
+  font-weight: 200;
+  font-size: 1.64rem;
+  line-height: 110%;
+  margin: 0.82rem 0 0.656rem 0;
 }
 
-/* Best Products */
-.product-item {
-	flex-basis: 300px;
-	max-width: 300px;
-	margin: 5px;
-}
-.product-item  .card  .card-title{
-	font-weight: bold;
-	text-shadow: 1px 1px 1px #FFF;
-}
-.section h2 {
-	font-weight: 200;
-}
-.material-scrolltop:hover {
-    background-color: inherit;
-    z-index: 9999;
-}
-
-.uninstall .header {
-	text-shadow: 0.8px 0px 0.5px #000 !important;
+#aboutEJCSection .principle h4::first-letter { 
+    font-size: 200%;
+    color: #0288d1;
 }

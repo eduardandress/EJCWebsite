@@ -1,32 +1,30 @@
-<div id="main-navbar" class="navbar-fixed">
-  <nav class="{{$demoColors['secondColorClass'] or '' }} {{$demoColors['navBarColorText'] or '' }}" role="navigation">
+<div class="navbar-fixed">
+  <nav class="grey darken-4 white-text" role="navigation">
+      <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo"><img src="./assets/images/logo.gif" style="height: 64px"  class="responsive-img" alt="ECJ logo" title="EJC-Software Solutions"></a>
+        <ul class="right hide-on-med-and-down">
+          <li><a class="goTo" href="#aboutEJCSection">About EJC</a></li>
+          <li><a class="goTo" href="#teamSection">The Team</a></li>
+          <li><a class="goTo" href="#educationSection">Education</a></li>
+          <li><a class="goTo" href="#interestsAndAbilitiesSection">Interests And Abilities</a></li>
+          <li><a class="goTo" href="#workSection">Our Work</a></li>
+          <li><a class="goTo" href="#servicesSection">Our Services</a></li>
 
-    <div class="nav-wrapper container-fluid">
+          <li><a class="goTo" href="#contactSection">Contact us</a></li>
+        </ul>
 
-  
-    <a id="logo-container" href="#" class="brand-logo">
-        <img height="64px" class="img-responsive" src="@if(!is_null($companyInfo)) {{URL::asset($companyInfo->logoURL)}} @else {{URL::asset('assets/images/company.svg')}} @endif">
-        <span class="compName {{$demoColors['navBarColorText'] or '' }}">@if(!is_null($companyInfo)) {{$companyInfo->name or 'CompanyName'}}  @endif </span>
-    </a>
-
-      <ul class="right hide-on-med-and-down">
-        <li><a href="{{ route('CoreRoutes::landing_page') }}">{{trans('core::menu.home')}}</a></li>
-        <li><a href="products">{{trans('core::menu.products')}}</a></li>
-        <li><a href="about">{{trans('core::menu.aboutUs')}}</a></li>
-        <li><a href="contact">{{trans('core::menu.contactUs')}}</a></li>
-      </ul>
-
-      <ul id="nav-mobile" class="side-nav {{$demoColors['secondColorClass'] or '' }} ">
-        <li><a href="{{ route('CoreRoutes::landing_page') }}">{{trans('core::menu.home')}}</a></li>
-        <li><a href="products">{{trans('core::menu.products')}}</a></li>
-        <li><a href="about">{{trans('core::menu.aboutUs')}}</a></li>
-        <li><a href="contact">{{trans('core::menu.contactUs')}}</a></li>
-
-      </ul>
-      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
-    </div>
+        <ul id="nav-mobile" class="side-nav">
+          <li><a  class="goTo" href="#aboutEJCSection">About EJC</a></li>
+          <li><a class="goTo" href="#teamSection">The Team</a></li>
+          <li><a class="goTo" href="#educationSection">Education</a></li>
+          <li><a class="goTo" href="#interestsAndAbilitiesSection">Interests And Abilities</a></li>
+          <li><a class="goTo" href="#workSection">Our Work</a></li>
+          <li><a class="goTo" href="#servicesSection">Our Services</a></li>
+          
+          <li><a class="goTo" href="#contactSection">Contact us</a></li>
+        </ul>
+        <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+      </div>
   </nav>
 </div>
 
- 
             

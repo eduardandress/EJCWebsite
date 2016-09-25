@@ -43,40 +43,7 @@ class Installation extends Migration
             DB::table('company')->truncate();
         }
 
-        /*----------  Product Table  ----------*/
         
-        if (!Schema::hasTable('product')) {
-
-            Schema::create('product', function (Blueprint $table) {
-                $table->increments('id');
-                $table->string('name');
-                $table->text('description')->nullable();
-                $table->float('price');
-                $table->string('currencyAbbr')->nullable();
-                $table->string('mainPictureURL')->nullable();
-                $table->boolean('isMain')->nullable()->default(true);
-                $table->float('rank')->nullable()->default('0.0');
-
-                $table->timestamps();
-            });
-        } else {
-            DB::table('product')->truncate();
-        }
-       
-        /*----------  Client Table  ----------*/
-        if (!Schema::hasTable('client')) {
-        
-            Schema::create('client', function (Blueprint $table) {
-                $table->increments('id');
-                $table->string('name');
-                $table->text('description')->nullable();
-                $table->string('mainPictureURL')->nullable();
-                
-                $table->timestamps();
-            });
-        } else {
-            DB::table('client')->truncate();
-        }
 
     }
 
@@ -88,8 +55,6 @@ class Installation extends Migration
     public function down()
     {
         Schema::drop('company');
-        Schema::drop('product');
-        Schema::drop('client');
 
     }
 }
