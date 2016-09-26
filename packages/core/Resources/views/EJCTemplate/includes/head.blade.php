@@ -19,7 +19,7 @@
   <link href="{{URL::asset('assets/font-awesome-4.6.3/css/font-awesome.min.css')}}" type="text/css" rel="stylesheet" media="screen,projection"/>
 
   <script type='text/javascript' data-cfasync='false' src='//dsms0mj1bbhn4.cloudfront.net/assets/pub/shareaholic.js' data-shr-siteid='1b051adb65fef1f23e236babcfae075b' async='async'></script>
-  <title>Special Offers-Developers-Applications|EJC Software Solutions</title>
+  <title>Software Development-Applications|EJC Software Solutions</title>
 
   <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
