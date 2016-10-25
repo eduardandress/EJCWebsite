@@ -2,11 +2,11 @@
 @section('content')
 
   @include('core::EJCTemplate.sections.home.aboutEJC')
+  @include('core::EJCTemplate.sections.home.services')
   @include('core::EJCTemplate.sections.home.aboutUs')
   @include('core::EJCTemplate.sections.home.education')
   @include('core::EJCTemplate.sections.home.interestAndAbilities')
   @include('core::EJCTemplate.sections.home.work')
-  @include('core::EJCTemplate.sections.home.services')
   @include('core::EJCTemplate.sections.home.contact')
 
   

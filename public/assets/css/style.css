@@ -203,10 +203,20 @@ a[ class="goTo" ]:target {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height:100vh !important;
+  /* height:100vh !important; */
 }
 .demoback1{
-  background-image: url(../images/demoImg3.jpg);
+  background-image: url(../images/demoImg33.gif);
+
+  background-position: center center;
+
+  background-repeat: no-repeat;
+
+  background-attachment: fixed;
+  
+  background-size: cover;
+  
+  background-color: #272222;
 }
 
 .demoBgn h1 {
@@ -228,3 +238,9 @@ a[ class="goTo" ]:target {
 nav .brand-logo{
   margin-left: 20px !important;
 }
+
+.developmentProcess {
+  text-align: center;
+  background: rgba(234, 105, 77, 0.07)
+}
+

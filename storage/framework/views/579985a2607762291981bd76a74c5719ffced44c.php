@@ -1,5 +1,5 @@
 
-<div class="section no-pad-bot " id="servicesSection">
+<div class="section no-pad-bot" id="servicesSection">
       <h2 class="center-align"> Where and how you can hire us</h2>
 
       <div class="container">
@@ -7,7 +7,7 @@
             <h3>Fiverr</h3>
 
             <div class="row">
-              <div class="col s6">
+              <div class="col s12 m6">
               <!-- Put this code anywhere in the body of your page where you want the badge to show up. -->
 
                 <div itemscope itemtype='http://schema.org/Person' class='fiverr-seller-widget' style='display: inline-block;'>
@@ -26,7 +26,7 @@
 
                 
               </div>
-              <div class="col s6">
+              <div class="col s12 m6">
                       <div class="row">
                         <div class="col s12 m12">
                           <div class="card indigo darken-2">
@@ -41,8 +41,20 @@
                         </div>
                       </div>
               </div>
+             
             </div>
         </div>
       </div>
-
+        <div class="developmentProcess row">
+            <h3 class="center-align"> Our Development Process</h3>
+            <div class="col s12 m4">
+              <img class="responsive-img"  src="<?php echo e(URL::asset('assets/images/1.png')); ?>" alt="fiverr gig process 1" title="Buying our gigs 1">
+            </div>
+            <div class="col s12 m4">
+              <img class="responsive-img"  src="<?php echo e(URL::asset('assets/images/2.png')); ?>" alt="fiverr gig process 2" title="Buying our gigs 2">
+            </div>
+            <div class="col s12 m4">
+              <img class="responsive-img"  src="<?php echo e(URL::asset('assets/images/3.png')); ?>" alt="custom order fiverr ejcsoftwaresolutions" title="Custom order fiverr">
+            </div>
+        </div>
 </div>

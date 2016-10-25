@@ -2,6 +2,7 @@
   <h2 class="center-align"> Our work</h2>
 
   <h3 class="center-align">Companies we've worked for</h3>
+  <p class="light center-align">Relevant jobs</p>
 
    <div class="row">
       <div class="col s12 m6 center-align work" id="EInAndAbSection">
@@ -340,7 +341,7 @@
         <div class="container ">
 
           <div class="col s12 m8 offset-m2">
-            <h5 class="white-text light text-center">We decided to share some of our demo apps, so you can check some of our work done!</h5>
+            <h5 class="white-text light text-center">We decided to share some of our demo apps, so you can check out our skills!</h5>
 
           </div>
 
