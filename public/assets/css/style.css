@@ -200,10 +200,11 @@ a[ class="goTo" ]:target {
    font-size: 5em;
 }
 .demoBgn{
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  
   /* height:100vh !important; */
+
+
+
 }
 .demoback1{
   background-image: url(../images/demoImg33.gif);
@@ -240,4 +241,20 @@ nav .brand-logo{
   text-align: center;
   background: rgba(234, 105, 77, 0.07)
 }
+.item .card.small .card-image{
+  max-height: 100% !important;
+}
 
+.item .card-content{
+    position: absolute;
+    bottom: 2px;
+    text-align: center;
+    width:  100%;
+    padding: 5px 20px;
+}
+.no-mbottom{
+  margin-bottom: 0;
+}
+.space-4{
+  padding: 16px 0 !important;
+}

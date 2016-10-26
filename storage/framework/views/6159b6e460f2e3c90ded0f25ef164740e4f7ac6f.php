@@ -66,7 +66,11 @@
 <div class="section no-pad-bot " id="aboutEJCSection">
 
   <h2 class="center-align"> About EJC </h2>
-
+    <div class="container">
+      <h5 class="flow-text center-align">
+        We're a Small Company dedicated to software development, using current technologies and best programming practices, combining great appearance with efficiency & performance. 
+      </h5>
+    </div>
 
     <div class="row">
       <h3 class="center-align">Principles</h3>
@@ -99,7 +103,7 @@
                     <div class="card-image waves-effect waves-block waves-light">
                       <img  class="responsive-img" src="<?php echo e(URL::asset($technology['imageURL'])); ?>">
                     </div>
-                    <div class="card-content">
+                    <div class="card-content" >
                       <span class="card-title  grey-text text-darken-4"><?php echo e($technology['name']); ?></span>
                     </div>
                   </div>
