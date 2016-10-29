@@ -15,6 +15,9 @@
       padding: 10px;
       font-family: 'Gloria Hallelujah', cursive;
    }
+    .main_banner_img{
+      margin-left: 20px; position: relative; bottom: 20px;
+    }
 
 </style>    
 <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
@@ -26,7 +29,7 @@
    
  <div class="center-align" style="display:flex; width: 100%; flex-flow: row wrap; justify-content: space-between; margin: 0 10%; align-items: center">
     <div style="width: 40%; flex-grow: 1; margin-bottom: 30px">
-        <h1 class="white-text center-align">
+        <h1 class="white-text center-align swoosh-effect-to-right">
           Web and Mobile Applications Development
         </h1>
          <div class="card  light white-text teal lighten-1">
@@ -54,10 +57,10 @@
 
     </div>
 
-    <div style="margin-left: 20px; position: relative; bottom: 20px">
+    <div class="main_banner_img">
       
-      <img  class="responsive-img"  src="<?php echo e(URL::asset('assets/images/main-banner-img.png')); ?>" alt="">
-      <div class="white-text slogan-text">
+      <img  class="responsive-img swoosh-effect-to-left"  src="<?php echo e(URL::asset('assets/images/main-banner-img.png')); ?>" alt="">
+      <div class="white-text slogan-text swoosh-effect-to-right">
         Giving you software solutions to the second power!
       </div>
     </div>

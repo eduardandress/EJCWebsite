@@ -48,32 +48,10 @@
               </div>
 
             </div>
-        </div>
+          </div>
       
 
-        <div class="row center">
-            <h3> What do we build?</h3>
-            <div class="col s6 m6 center-align ">
-              <div class="icon-block principle">
-                  <img src="{{URL::asset('assets/images/ejc-development.png')}}" alt="" class="responsive-img">
-                  <p>
-                    We specialize in web application development, website design & mobile apps for Android devices.   
-                  </p>
-                  
-              </div>
-            </div>
-            <div class="col s6 m6 center-align ">
 
-              <div class="icon-block principle">
-                  
-                  <img src="{{URL::asset('assets/images/ejc-many-areas.png')}}" alt="" class="responsive-img">
-                  <p>
-                    We build software for a diversity of fields like Medical & clinical area, Food industry, Music industry, Finacial & e-commerce, Marketing and Advertising, E-learning, and many more!     
-                  </p>
-                  
-              </div>
-            </div>    
-          </div>
         </div>
 
       </div>
@@ -95,35 +73,36 @@
 
         </div>
         <div class="row container">
-            <div class="col s12 m12">
-                     <div class="card indigo darken-2">
+            <div class="col s12 m8 offset-m2">
+                     <div class="card indigo darken-2 z-depth-5 ">
                             <div class="card-content white-text">
-                              <span class="card-title"> Do you need something in particular?</span>
+                              <span class="card-title"><strong> Do you need something in particular?</strong></span>
 
-                              <div class="row valign-wrapper no-mbottom ">
-                                <div class="col m10 s10">
-                                   <p><span>Check out our current gigs!. But if you need something custom or have an idea: Don't stop here.
-                                    <br><b>WE CAN MAKE IT HAPPEN! </b>, just request a custom order and we will evaluate it and send you an offer for it.</span></p>
-                                </div>
-                                <div class="col m2 s2 valign">
+                              <div class="no-mbottom ">
+                                <!-- <div class="col m12 s12"> -->
+                                   <p><span>Our active gigs are not what you're looking for? Do you need something custom or have an idea? Don't stop here.<b>WE CAN MAKE IT HAPPEN! </b>, just request a custom order and we will evaluate it and send you an offer for it.</span></p>
+                                <!-- </div> -->
+                                <!-- <div class="col m2 s2 valign">
                                   <div>
                                     <i class="valign fa fa-chevron-circle-right fa-3x" aria-hidden="true"></i>
 
                                   </div>
-                                </div>
+                                </div> -->
                               </div>
                             </div>
                             <div class="card-action right-align">
-                              <a href="http://support.fiverr.com/hc/en-us/articles/204431183-Requesting-a-Custom-Order" target="_blank">Request a special order</a>
+                              <a href="http://support.fiverr.com/hc/en-us/articles/204431183-Requesting-a-Custom-Order" target="_blank">Request a Fiverr custom order</a>
                             </div>
                           </div>
 
             </div>
 
-            <div class="col s12 m12 center">
+           
+              
+            <div class="col s12 m8 offset-m2">
               <img class="responsive-img"  src="{{URL::asset('assets/images/3.png')}}" alt="custom order fiverr ejcsoftwaresolutions" title="Custom order fiverr">
             </div>
-
+        
 
         </div>
 </div>

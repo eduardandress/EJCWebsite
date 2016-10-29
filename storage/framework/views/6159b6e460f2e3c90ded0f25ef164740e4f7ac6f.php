@@ -93,7 +93,35 @@
         </div>
       </div>
     </div>
+
+
+  
+    
    <div class="container">
+
+     <div class="row center">
+          <h3> What do we build?</h3>
+          <div class="col s12 m6 center-align ">
+            <div class="icon-block principle">
+                <img src="<?php echo e(URL::asset('assets/images/ejc-development.png')); ?>" alt="" class="responsive-img">
+                <p>
+                  We specialize in web application development, website design & mobile apps for Android devices.   
+                </p>
+                
+            </div>
+          </div>
+          <div class="col s12 m6 center-align ">
+
+            <div class="icon-block principle">
+                
+                <img src="<?php echo e(URL::asset('assets/images/ejc-many-areas.png')); ?>" alt="" class="responsive-img">
+                <p>
+                  We build software for a diversity of fields like Medical & clinical area, Food industry, Music industry, Finance & e-commerce, Marketing and Advertising, E-learning, and many more!     
+                </p>
+                
+            </div>
+          </div>    
+      </div>
       <h3 class="center-align"> Using the best technologies </h3>
 
       <div class="owl-carousel" id="owl-clients">
