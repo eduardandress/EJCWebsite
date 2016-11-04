@@ -1,5 +1,5 @@
 <div class="section no-pad-bot grey darken-4 white-text" id="educationSection">
-  <h2 class="center-align"> What we've studied and learned </h2>
+  <h2 class="center-align wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s" > What we've studied and learned </h2>
 
 
   <div class="main-container">

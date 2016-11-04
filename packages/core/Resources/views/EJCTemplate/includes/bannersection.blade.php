@@ -1,80 +1,48 @@
 
-<style type="text/css">
-   .main-text-panel{
-      box-shadow: 1px 1px 5px rgba(0, 3, 0, 0.28);
-      border-radius: 0px;
-      padding:  15px;
-   }
-   .slogan-text{
-      position: relative;
-     
-      width: 100%;
-      text-align: center;
-      font-size:  20px;
-      background: rgba(255, 255, 255, 0.1);
-      padding: 10px;
-      font-family: 'Gloria Hallelujah', cursive;
-   }
-    .main_banner_img{
-      margin-left: 20px; position: relative; bottom: 20px;
-    }
 
-</style>    
-<link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
 <div class="section no-pad-bot demoBgn  blue darken-3 valign-wrapper" id="index-banner">
-  
+ <div class="center-align main-section" >
+  <div class="left-section" >
+    <h1 class="white-text center-align swoosh-effect-to-right">
+      Web and Mobile Applications Development
+    </h1>
+    <div class="card  light white-text teal lighten-1">
+      <div class="card-content">
 
-    
-    <!-- <h1 class="header center white-text">EJC Software Solutions</h1> -->
-   
- <div class="center-align" style="display:flex; width: 100%; flex-flow: row wrap; justify-content: space-between; margin: 0 10%; align-items: center">
-    <div style="width: 40%; flex-grow: 1; margin-bottom: 30px">
-        <h1 class="white-text center-align swoosh-effect-to-right">
-          Web and Mobile Applications Development
-        </h1>
-         <div class="card  light white-text teal lighten-1">
-            <div class="card-content">
-                
-              <p class="header text-center">
-                Make your ideas <strong>come true</strong> & cover your <strong>software needs!</strong>
-                <br>
-              </p>
-              <br>
-              <div class="divider"></div>
-              <br>
-              <p class="header text-center">
-                Let's bring our minds together and create the <strong>best software</strong> at <strong>affordable prices</strong> just for your budget!
-              </p>
-
-            </div>
-
-         </div>
-        <p class="white-text">
-          Using the best tools, the best programming practices, and computational techniques. 
+        <p class="header text-center">
+          Make your ideas <strong>come true</strong> & cover your <strong>software needs!</strong>
+          <br>
         </p>
-        
-        <a href="#servicesSection" id="download-button" class="btn-large center waves-effect waves-light light-blue darken-2 goTo">Request our services</a>
+        <br>
+        <div class="divider"></div>
+        <br>
+        <p class="header text-center">
+          Let's bring our minds together and create the <strong>best software</strong> at <strong>affordable prices</strong> just for your budget!
+        </p>
 
-    </div>
-
-    <div class="main_banner_img">
-      
-      <img  class="responsive-img swoosh-effect-to-left"  src="{{URL::asset('assets/images/main-banner-img.png')}}" alt="">
-      <div class="white-text slogan-text swoosh-effect-to-right">
-        Giving you software solutions to the second power!
       </div>
+
     </div>
+    <p class="white-text">
+      Using the best tools, the best programming practices, and computational techniques. 
+    </p>
+
+    <a href="#servicesSection"  class="btn-large center waves-effect waves-light light-blue darken-2 goTo">Request our services</a>
 
   </div>
- 
-    
-   <!--  <div class="container valign"> 
-   
-   
-   <div class="row center">
-     <a href="#servicesSection" id="download-button" class="btn-large waves-effect waves-light light-blue darken-2 goTo">Request our services</a>
-   </div>
-   <br><br>
 
-  </div> -->
+  <div class="main_banner_img">
+
+    <img  class="responsive-img swoosh-effect-to-left"  src="{{URL::asset('assets/images/main-banner-img.png')}}" alt="">
+    <div class="white-text slogan-text swoosh-effect-to-right">
+      Giving you software solutions to the second power!
+    </div>
+  </div>
+
+
+
+</div>
+</div>
+<div class="col m12  blue darken-3"  style="text-align: center; cursor:pointer; width:100%; padding: 10px; box-shadow: 1px -3px 10px #4da3da">
+  <i  href="#aboutEJCSection" class="goTo fa fa-chevron-down white" style="padding: 15px; border-radius: 50%" aria-hidden="true"></i>
 </div>

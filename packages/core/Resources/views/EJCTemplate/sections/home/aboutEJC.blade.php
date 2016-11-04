@@ -63,30 +63,31 @@
 
     ); 
 ?>
-<div class="section no-pad-bot " id="aboutEJCSection">
+<div class="section no-pad-bot" id="aboutEJCSection">
 
-  <h2 class="center-align"> About EJC </h2>
-    <div class="container">
+
+  <h2 class="center-align   wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s" > About EJC </h2>
+    <div class="container  wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s" >
       <h5 class="flow-text center-align">
         We're a Small Company dedicated to software development, using current technologies and best programming practices, combining great appearance with efficiency & performance. 
       </h5>
     </div>
 
-    <div class="row">
+    <div class="row container-fluid">
       <h3 class="center-align">Principles</h3>
-      <div class="col s12 m4">
+      <div class="col s12 m4  wow flipInX" data-wow-duration="1s" data-wow-delay="0.5s" >
         <div class="icon-block principle">
             <h4><b>E</b>xtremely good service </h4>
             We strive to offer you high quality service, showing humility, respect and fairness toward all. <b>Your satisfaction & trust are our best reward</b>. 
         </div>
       </div>
-      <div class="col s12 m4">
+      <div class="col s12 m4 wow flipInX" data-wow-duration="1s" data-wow-delay="0.5s">
         <div class="icon-block principle">
             <h4><b>J</b>ob done</h4>
             We are fully commited to giving you the best product possible. Having always 100% feedback with you. So the moment we start, <b> we never stop until it's a job done!.</b>
         </div>
       </div>
-      <div class="col s12 m4">
+      <div class="col s12 m4 wow flipInX" data-wow-duration="1s" data-wow-delay="0.5s">
         <div class="icon-block principle">
             <h4><b>C</b>reative ideas</h4>
             We are in an everlasting tunnel of inspiration, as developers we wear many hats to see things in different perspectives, but collaboration contributes to innovation. <b>So let's bring our ideas together!.</b>
@@ -99,7 +100,7 @@
     
    <div class="container">
 
-     <div class="row center">
+     <div class="row center  wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
           <h3> What do we build?</h3>
           <div class="col s12 m6 center-align ">
             <div class="icon-block principle">

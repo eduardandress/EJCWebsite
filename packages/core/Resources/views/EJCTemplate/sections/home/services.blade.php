@@ -1,10 +1,17 @@
 
 <div class="section no-pad-bot" id="servicesSection">
-      <h2 class="center-align"> Where and how you can hire us</h2>
-
+      <h2 class="center-align  wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s"> Where and how you can hire us</h2>
+      <div class="container">
+        <h5 class="flow-text center-align">
+           We want to offer you a clear and secure development process, from the initial contact to the final delivery, where 
+           you can ensure that you get your service done with a complete secure payment and we as sellers, be sure that we get paid :).
+           That's why we offer our services on these platforms:
+        </h5>
+        <div class="divider"></div> 
+      </div>
       <div class="container">
         <div id="fiverrSection">
-            <h3>Fiverr</h3>
+            <h4> <strong> Fiverr</strong></h4>
 
             <div class="row">
               <div class="col s12 m6">
@@ -56,12 +63,12 @@
 
       </div>
         <div class="developmentProcess row container">
-            <h3 class="center-align"> Our Development Process</h3>
+            <h3 class="center-align  wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s"> Our Development Process</h3>
             <div class="col s12 m6">
-              <img class="responsive-img"  src="{{URL::asset('assets/images/1.png')}}" alt="fiverr gig process 1" title="Buying our gigs 1">
+              <img class="responsive-img"  src="{{URL::asset('assets/images/ejc-softwares-fiverr-process-1.png')}}" alt="fiverr gig process 1" title="Buying our gigs 1">
             </div>
             <div class="col s12 m6">
-              <img class="responsive-img"  src="{{URL::asset('assets/images/2.png')}}" alt="fiverr gig process 2" title="Buying our gigs 2">
+              <img class="responsive-img"  src="{{URL::asset('assets/images/ejc-softwares-fiverr-process-2.png')}}" alt="fiverr gig process 2" title="Buying our gigs 2">
             </div>
            <br>
             <div class="col s12 m12 space-4">
@@ -72,9 +79,9 @@
             <br>
 
         </div>
-        <div class="row container">
+        <div class="row container" >
             <div class="col s12 m8 offset-m2">
-                     <div class="card indigo darken-2 z-depth-5 ">
+                     <div class="card indigo darken-2 z-depth-5 wow bounceInUp" data-wow-duration="2s" data-wow-delay="0.4s">
                             <div class="card-content white-text">
                               <span class="card-title"><strong> Do you need something in particular?</strong></span>
 
@@ -82,12 +89,7 @@
                                 <!-- <div class="col m12 s12"> -->
                                    <p><span>Our active gigs are not what you're looking for? Do you need something custom or have an idea? Don't stop here.<b>WE CAN MAKE IT HAPPEN! </b>, just request a custom order and we will evaluate it and send you an offer for it.</span></p>
                                 <!-- </div> -->
-                                <!-- <div class="col m2 s2 valign">
-                                  <div>
-                                    <i class="valign fa fa-chevron-circle-right fa-3x" aria-hidden="true"></i>
-
-                                  </div>
-                                </div> -->
+                            
                               </div>
                             </div>
                             <div class="card-action right-align">
@@ -100,7 +102,7 @@
            
               
             <div class="col s12 m8 offset-m2">
-              <img class="responsive-img"  src="{{URL::asset('assets/images/3.png')}}" alt="custom order fiverr ejcsoftwaresolutions" title="Custom order fiverr">
+              <img class="responsive-img"  src="{{URL::asset('assets/images/ejc-softwares-fiverr-custom-order.png')}}" alt="custom order fiverr ejcsoftwaresolutions" title="Custom order fiverr">
             </div>
         
 

@@ -1,7 +1,7 @@
   
   <footer class="page-footer grey darken-4 white-text">
     <div class="container">
-      <div class="row">
+      <div class="row wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
         <div class="col l6 s12">
           <h5 class="white-text">EJC Software Solutions</h5>
           <img src="./assets/images/logo.gif"  class="responsive-img left-align" style="height: 120px; float: left; margin: 10px" alt="ECJ logo" title="EJC-Software Solutions" >
@@ -43,9 +43,20 @@
   <!--  Scripts-->
   <script src="assets/js/jquery-3.1.0.min.js"></script>
   <script src="assets/js/materialize.min.js"></script>
+  <script src="assets/js/wow.min.js"></script>
   <script src="assets/mScrollTop/material-scrolltop.js"></script>
   <script src="assets/js/init.js"></script>
-
-
+  <script>
+   wow = new WOW(
+      {
+        boxClass:     'wow',      // default
+        animateClass: 'animated', // default
+        offset:       0,          // default
+        mobile:       true,       // default
+        live:         true        // default
+      }
+   );
+   wow.init();
+  </script>
 
 

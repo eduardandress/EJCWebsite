@@ -1,9 +1,9 @@
 <div class="section no-pad-bot grey lighten-5" id="teamSection" >
 
-  <h2 class="center-align"> Twin team </h2>
+  <h2 class="center-align  wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s"> Twin team </h2>
   <div class="row">
     <div class="col s12 m5 center-align" id="EAboutSection">
-        <h2>
+        <h2 class="wow bounceInLeft" data-wow-duration="0.5s" data-wow-delay="0.4s">
           I'm E
         </h2>
         <img class="responsive-img"  src="<?php echo e(URL::asset('assets/images/E.png')); ?>" alt="software developer" title="EC-Software developer">
@@ -56,7 +56,7 @@
       </p>
     </div>
     <div class="col s12 m5 center-align" id="JAboutSection">
-      <h2>
+      <h2 class="wow bounceInRight" data-wow-duration="1s" data-wow-delay="0.4s">
         I'm J
       </h2>
       <img class="responsive-img" src="<?php echo e(URL::asset('assets/images/J.png')); ?>" alt="web programmer" title="JC-Software developer">

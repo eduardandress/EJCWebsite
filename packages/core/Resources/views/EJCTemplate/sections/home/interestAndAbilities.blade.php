@@ -1,5 +1,5 @@
 <div class="section no-pad-bot  " id="interestsAndAbilitiesSection">
-  <h2 class="center-align"> What we're good at and preferences </h2>
+  <h2 class="center-align wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s"> What we're good at and preferences </h2>
 
     <div class="row">
       <div class="col s12 m6 center-align" id="EInAndAbSection">
