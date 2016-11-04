@@ -4,7 +4,7 @@
       <div class="container">
         <h5 class="flow-text center-align">
            We want to offer you a clear and secure development process, from the initial contact to the final delivery, where 
-           you can ensure that you get your service done with a complete secure payment and we as sellers, be sure that we get paid :).
+           you can ensure that you get your service done with a complete secure payment and we as sellers, make sure that we get paid :).
            That's why we offer our services on these platforms:
         </h5>
         <div class="divider"></div> 
