@@ -78,13 +78,13 @@
       <div class="col s12 m4  wow flipInX" data-wow-duration="1s" data-wow-delay="0.5s" >
         <div class="icon-block principle">
             <h4><b>E</b>xtremely good service </h4>
-            We strive to offer you high quality service, showing humility, respect and fairness toward all. <b>Your satisfaction & trust are our best reward</b>. 
+            We strive to offer you high-quality service, showing humility, respect, and fairness toward all. <b>Your satisfaction & trust are our best reward</b>. 
         </div>
       </div>
       <div class="col s12 m4 wow flipInX" data-wow-duration="1s" data-wow-delay="0.5s">
         <div class="icon-block principle">
             <h4><b>J</b>ob done</h4>
-            We are fully commited to giving you the best product possible. Having always 100% feedback with you. So the moment we start, <b> we never stop until it's a job done!.</b>
+            We are fully committed to giving you the best product possible. Having always 100% feedback with you. So the moment we start, <b> we never stop until it's a job done!.</b>
         </div>
       </div>
       <div class="col s12 m4 wow flipInX" data-wow-duration="1s" data-wow-delay="0.5s">
@@ -117,7 +117,7 @@
                 
                 <img src="<?php echo e(URL::asset('assets/images/ejc-many-areas.png')); ?>" alt="" class="responsive-img">
                 <p>
-                  We build software for a diversity of fields like Medical & clinical area, Food industry, Music industry, Finance & e-commerce, Marketing and Advertising, E-learning, and many more!     
+                  We build software for a diversity of fields like Medical & clinical area, Food Industry, Music Industry, Finance & E-commerce, Marketing and Advertising, E-learning, and many more!    
                 </p>
                 
             </div>

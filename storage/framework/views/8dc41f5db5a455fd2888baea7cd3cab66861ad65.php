@@ -12,23 +12,23 @@
             <ul class="timeline">
              <li class="event" >
                 <h3>Algorithm principles - C & C++ development</h3>
-                <p>This was the beginning of the journey. we started getting our minds literally changed, a new way of thinking, understanding the Abstraction concept and the importance of it not just for good programming but everyday problem solving. </p>
+                <p>This was the beginning of the journey. We started getting our minds completely changed, a new way of thinking, understanding the Abstraction concept and the importance of it not just for good programming but common problem solving.
 
-                <p>We learned how to code in C, applying all the theoretical concepts. We learned data structures and all the language elements. then we used C++ which gave us a flavour about Object-oriented programming (OOP).</p>
+                <p>We learned how to code in C, applying all the theoretical concepts. We learned data structures and all the language elements. Then we used C++ which gave us a flavor about Object-oriented programming (OOP).</p>
               </li>
               <li class="event" >
                 <h3>Database principles & Software engineering</h3>
                 <p>
-                 We started learning all the process required in order to design and create good and efficient databases, from designing E-R diagrams to query optimizations and advanced techniques.
+                 We started learning all the process required to design and create safe and efficient databases, from creating E-R diagrams to query optimizations and advanced techniques.
                 </p>
                 <p>
-                  Also, we studied all the principles applied to the design, development, maintenance, testing, and evaluation of the software in a systematic method. We studied and applied software development methodologies and frameworks like Agile Software Development, Extreme Programming (XP), Rapid Application Development (RAD), Scrum, RUP, and others.
+                  Also, we studied all the principles applied to the design, development, maintenance, testing, and evaluation of the software in a systematic method. We studied and used software development methodologies and frameworks like Agile Software Development, Extreme Programming (XP), Rapid Application Development (RAD), Scrum, RUP, and others.
                 </p>
               </li>
               <li class="event" >
                 <h3>Web application development & Web frameworks </h3>
                 <p>
-                  Here we learned all about web development principles and methodologies. We started designing and creating not just simple 'Web sites' but complete applications using PHP language as back-end and front-end languages and like Javascript(Vanilla) and the very known JS framework: Jquery. And of course HTML & CSS.
+                  Here we learned all about web development principles and methodologies. We started designing and creating not just simple 'Web sites' but complete applications using PHP language as back-end and front-end languages and like Javascript(Vanilla) and the very known JS Framework: Jquery. And of course HTML & CSS.
                 </p>
 
                 <p>
@@ -36,7 +36,7 @@
                 </p>
 
                 <p>
-                 And then Symfony came along. Our first web framework, one of the most used and powerful PHP frameworks... and with a very steep learning curve. We experimented with it by developing several apps and it was tremendously awesome, haha.
+                 And then Symfony came along. Our first web framework, one of the most used and powerful PHP frameworks... and with a very steep learning curve. We experimented with it by developing several apps, and it was tremendously awesome, haha.
                 </p>
               </li>
               <li class="event" >
@@ -51,7 +51,7 @@
               <li class="event" >
                 <h3>Mobile development & HCI </h3>
                 <p>
-                 Well guys, at this point we already had the enough knowledge and some expertise in programming (we already knew all the principles of programming languages), so we started developing mobile applications for Android using JAVA. we learned and used Cloud Computing technologies and techniques to make robust and scalable apps.
+                  Well guys, at this point we already had the enough knowledge and some expertise in programming (we already knew all the principles of programming languages), so we started developing mobile applications for Android using JAVA. We learned and used Cloud Computing technologies and techniques to make robust and scalable apps.
                 </p>
                 <p>
                   To complete the circle, we learned about HCI (Human-computer interaction) which involves how users interact with any device and its software, all the cognitive process carried out. Finally, we learned about UX (User experience) and how to make good interfaces (UI).
