@@ -4,7 +4,7 @@
       <div class="container">
         <h5 class="flow-text center-align">
            We want to offer you a clear and secure development process, from the initial contact to the final delivery, where 
-           you can ensure that you get your service done with a complete secure payment and we as sellers, be sure that we get paid :).
+           you can ensure that you get your order done with a complete secure payment and we as sellers, make sure that we get paid :).
            That's why we offer our services on these platforms:
         </h5>
         <div class="divider"></div> 
@@ -81,19 +81,21 @@
         </div>
         <div class="row container" >
             <div class="col s12 m8 offset-m2">
-                     <div class="card indigo darken-2 z-depth-5 wow bounceInUp" data-wow-duration="2s" data-wow-delay="0.4s">
+                     <div class="card blue darken-2 z-depth-5 wow bounceInUp" data-wow-duration="2s" data-wow-delay="0.4s">
                             <div class="card-content white-text">
-                              <span class="card-title"><strong> Do you need something in particular?</strong></span>
+                              <span class="card-title"><strong> Our current projects are coming soon!</strong></span>
 
                               <div class="no-mbottom ">
                                 <!-- <div class="col m12 s12"> -->
-                                   <p><span>Our active gigs are not what you're looking for? Do you need something custom or have an idea? Don't stop here.<b>WE CAN MAKE IT HAPPEN! </b>, just request a custom order and we will evaluate it and send you an offer for it.</span></p>
+                                   <p><span>
+                                       We are going to share our development ideas/projects with online demos in our new blog <i>very soon</i>. You can contact us on Fiverr if you are interested in one of them or have an idea, we would be delighted to help you make it happen.
+                                   </span></p>
                                 <!-- </div> -->
                             
                               </div>
                             </div>
                             <div class="card-action right-align">
-                              <a href="http://support.fiverr.com/hc/en-us/articles/204431183-Requesting-a-Custom-Order" target="_blank">Request a Fiverr custom order</a>
+                              <a href="https://www.fiverr.com/ejcsoftwares" target="_blank">I have an idea!</a>
                             </div>
                           </div>
 
@@ -101,10 +103,10 @@
 
            
               
-            <div class="col s12 m8 offset-m2">
+          <!--   <div class="col s12 m8 offset-m2">
               <img class="responsive-img"  src="<?php echo e(URL::asset('assets/images/ejc-softwares-fiverr-custom-order.png')); ?>" alt="custom order fiverr ejcsoftwaresolutions" title="Custom order fiverr">
             </div>
-        
+         -->
 
         </div>
 </div>
