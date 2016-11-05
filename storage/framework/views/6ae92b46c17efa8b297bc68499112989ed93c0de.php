@@ -247,7 +247,7 @@
               <strong>Name:</strong> <p> Virtual learning environment (VLE) integrating Social Network elements.</p>
               <strong>Description:</strong> 
               <p> 
-                A fusion of all VLE Systems aspects such as Groups & Roles Management, Courses & activities creation with the addition of Social Network aspects like virtual rooms and real-time chat & content sharing. Finally, we added gamification elements like surveys, simple educational challenge games, etc.
+               A fusion of all VLE Systems aspects such as Groups & Roles Management, Courses & Activities creation with the addition of Social Network elements like virtual rooms and real-time chat & content sharing. Finally, we added gamification elements like surveys, simple educational challenge games, etc.
               </p>
 
               <strong>Languages & Technologies used:</strong>
@@ -273,7 +273,7 @@
               <strong>Name:</strong> <p> Financial management web system for small companies.</p>
               <strong>Description:</strong> 
               <p> 
-               A simple web application to help control incomes and outcomes from a small company. It provided a very simple way of movement classification, account management, and interactive charts.
+              A simple mobile application wich displays different catalogs for car accessories. This was an app developed for a small company willing to promote their products.
              </p>
 
              <strong>Languages & Technologies used:</strong>
@@ -370,7 +370,7 @@
      </div>
      <div class="card-content">
        <div class="card-content">
-        <p>Do you know the famous Google Keep? well, we replicated the idea (Copycats mode on haha) adding some stuff like a new panel view and other little changes.</p>
+        <p>Do you know the famous Google Keep? Well, we replicated the idea (Copycats mode on haha) adding some stuff like a new panel view and other little changes.</p>
 
         <br>
         <strong>Technologies</strong>

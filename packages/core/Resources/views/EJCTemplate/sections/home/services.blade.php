@@ -3,9 +3,7 @@
       <h2 class="center-align  wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s"> Where and how you can hire us</h2>
       <div class="container">
         <h5 class="flow-text center-align">
-           We want to offer you a clear and secure development process, from the initial contact to the final delivery, where 
-           you can ensure that you get your order done with a complete secure payment and we as sellers, make sure that we get paid :).
-           That's why we offer our services on these platforms:
+           We want to offer you a transparent and secure development process, from the initial contact to the final delivery, where you can ensure that you get your order done with an entirely secure payment and, we as sellers, make sure that we get paid :). That's why we offer our services on these platforms:
         </h5>
         <div class="divider"></div> 
       </div>
@@ -21,11 +19,11 @@
 
                       <div class=" no-mbottom ">
                         <p class="light">
-                         Fiverr.com is a huge online marketplace for services where a lot of <strong>professionals</strong> from several areas are increasingly offering their jobs on this platform.
+                         Fiverr.com is a huge online marketplace for services where a lot of <strong>professionals</strong> several areas are increasingly offering their jobs on this platform.
                         </p>
                         <br>
                         <p class="light">
-                          As a buyer you can request from simple and straight forward jobs to complex activities (known as Gigs) with a <strong>high secured platform </strong> plus having 100% communication with the seller.
+                          As a buyer, you can request from simple and straightforward jobs to complicated activities (known as Gigs) with a <strong>high secured platform </strong> plus 100% communication with the seller.
                         </p>
                       </div>
                     </div>
@@ -87,7 +85,7 @@
 
                               <div class="no-mbottom ">
                                 <!-- <div class="col m12 s12"> -->
-                                   <p><span>Our active gigs are not what you're looking for? Do you need something custom or have an idea? Don't stop here.<b>WE CAN MAKE IT HAPPEN! </b>, just request a custom order and we will evaluate it and send you an offer for it.</span></p>
+                                   <p><span>Our active gigs are not what you're looking for? Do you need something custom or have an idea? Don't stop here.<b>WE CAN MAKE IT HAPPEN! </b>, just request a custom order, and we will evaluate it and send you an offer for it.</span></p>
                                 <!-- </div> -->
                             
                               </div>
